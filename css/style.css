@@ -1,0 +1,133 @@
+/* Import Google Web fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+body {
+    /* sets the page defaults e.g. background and default typography */
+    background: #e0ecf1;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 53, 78);
+}
+
+a {
+  color: rgb(51, 53, 78);
+}
+/* a few tweaks here and there */
+
+h2 {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    /* resets the left margin in the figure*/
+}
+
+figure img {
+    max-width: 100%;
+    /* images will shrink to fit inside the main conent column*/
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+figcaption {
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(51, 53, 78);
+    text-align: center;
+    padding: 1em
+}
+
+h3 {
+  font-style: italic;
+}
+
+/* Styling the full-page background headers */
+
+.image_bg, .color_bg {
+    height: 100vh;
+    /* this sets the height of each full width image section to that of the viewport.*/
+    position: relative;
+    /*display: flex;  */
+    background-position: center !important;
+}
+
+/* the text inside the headers */
+
+header {
+    font-family: 'Noto Serif', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 0 9px #000000;
+    width: 75%;
+    text-align: right;
+    /*   margin: auto;
+   */
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+header h3 {
+  font-style: italic;
+}
+/* Styles for individual header sections by class name. */
+
+
+.title {
+    background: url(../images/Alaska2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* the background image doesn't move when scrolling*/
+}
+
+
+/* the above style gets copied for every new section header with background image. Each new copy has a new class name. */
+
+.video {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em
+}
+
+.photo {
+  padding: 1em 23%
+}
+
+/* Content sections */
+
+.content {
+    margin: 0 auto;
+    padding: 1em 23%;
+    /* this in-effect sets the content section's width e.g. 20% = 60% width. */
+}
+
+.sliders {
+  padding: 1em 20%
+}
+
+.carousel {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer {
+    height: 50px;
+    background: #000;
+    color: #eee;
+    text-align: right;
+    padding: 1em;
+}
